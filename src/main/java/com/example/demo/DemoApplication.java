@@ -10,4 +10,7 @@ public class DemoApplication {
 		SpringApplication.run(DemoApplication.class, args);
 	}
 
+	static {
+		io.swagger.v3.core.jackson.ModelResolver.enumsAsRef = true;
+	}
 }
